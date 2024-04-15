@@ -29,10 +29,10 @@ sweat sandals'.
 
 I trained a transformer using clean text description only. Each text description is split into a number of 
 tokens. A dictionary is created with the tokens, i.e., English words in the training data. In addition, the 
-dictionary contains two special tokens '<pad>' and '<unknown>'. Since the maximum number of tokens 
+dictionary contains two special tokens '\<pad>' and '\<unknown>'. Since the maximum number of tokens 
 in a single text description in the training or test data is 15, any text description with fewer than 15 
-tokens are padded with the '<pad>' token to reach 15 tokens. Any token in the test data that cannot be 
-found in the dictionary will be replaced with the '<unknown>' token. The text description, represented 
+tokens are padded with the '\<pad>' token to reach 15 tokens. Any token in the test data that cannot be 
+found in the dictionary will be replaced with the '\<unknown>' token. The text description, represented 
 as 15 tokens, is forwarded to the transformer. The transformer uses positional embedding and attention 
 layers as in Assignment 5. The transformer performs encoding but does not perform decoding. Instead, 
 a fully connected classification layer is added to the encoding layer.
