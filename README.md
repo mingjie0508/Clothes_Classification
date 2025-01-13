@@ -8,13 +8,7 @@ A transformer was trained on the text data, and three CNNs (ResNet, EfficientNet
 
 This project requires Pytorch with GPU.
 
-Create conda environment
-```
-conda create -n=<env_name> python=3.7.16 anaconda
-conda activate <env_name>
-```
-
-Install libraries
+Install the libraries
 
 ```
 pip install -r requirements.txt
